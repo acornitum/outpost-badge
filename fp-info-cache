@@ -1,4 +1,4 @@
-24753375816424489
+24755158041469677
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -3419,6 +3419,13 @@ Capacitor_SMD
 C_Trimmer_Voltronics_JZ
 trimmer capacitor SMD horizontal, http://www.knowlescapacitors.com/File%20Library/Voltronics/English/GlobalNavigation/Products/Trimmer%20Capacitors/CerChipTrimCap.pdf
  Voltronics JR
+0
+2
+2
+Capacitor_SMD
+Capacitor 0402
+
+
 0
 2
 2
