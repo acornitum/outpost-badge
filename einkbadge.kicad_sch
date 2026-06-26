@@ -7794,16 +7794,6 @@
 		)
 		(uuid "5ff70dee-bc8e-4d08-98dd-afb2467b921e")
 	)
-	(text "place resistors close to mcu"
-		(exclude_from_sim no)
-		(at 220.726 170.942 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8b41e414-8002-4bf0-b7e7-af8439cb696e")
-	)
 	(text "NFC"
 		(exclude_from_sim no)
 		(at 364.236 148.844 0)
@@ -7837,16 +7827,6 @@
 			)
 		)
 		(uuid "f0032753-b149-499e-a960-00d37f30ddb1")
-	)
-	(text "LOOK AT DESIGN GUIDE FOR PCB LAYOUT FOR VREG"
-		(exclude_from_sim no)
-		(at 43.942 173.228 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "f20c24ff-e34d-4724-bc73-d20756679d67")
 	)
 	(text "BROKEN OUT PINS / MOUNTING HOLES"
 		(exclude_from_sim no)
