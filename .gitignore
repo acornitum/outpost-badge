@@ -1,0 +1,5 @@
+# scratch / downloads (CircuitPython UF2s, captures, etc.)
+tmp/
+
+# macOS
+.DS_Store
