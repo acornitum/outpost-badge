@@ -10,8 +10,6 @@ Includes:
 - 21 gpio pins broken out that you can use with the perfboard at the bottom
 - 6 tactile buttons you can snap right onto the board
 
-Here's a video of it working!! By [@samliu]()
-
 [Here](https://user-cdn.hackclub-assets.com/019ff91c-0464-7b39-83fa-bce072a783c1/img_1220__yafw_balanced_.mp4) is a video of flappy bird on it! Firmware by [@SamDev-7](https://github.com/SamDev-7)
 
 <img width="358" height="200" alt="image" src="https://github.com/user-attachments/assets/0dd3e98f-1096-4351-8b76-29599a997ecf" />
