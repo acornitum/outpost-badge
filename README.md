@@ -2,7 +2,7 @@
 
 <img width="842" height="574" alt="image" src="https://github.com/user-attachments/assets/f5cfc8d3-3aa6-4d60-918c-59eb98989a02" />
 
-These are the e-ink badges that were made for Outpost! They're RP2354 and have an onboard e-ink driver :D 
+These are e-ink badges that I made for Outpost! They're built with the RP2354 and have an onboard e-ink driver - I also did the art on it :D
 
 Includes:
 - 2.9in e-ink screen
