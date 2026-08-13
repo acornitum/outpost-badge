@@ -1,0 +1,18 @@
+# KiCad backups and autosave junk
+PCB/*-backups/
+_autosave-*
+\#auto_saved_files#
+*.bak
+*.000
+*.bck
+*-save.pro
+*.lck
+
+# KiCad auto-generated caches (regenerated on open, not project data)
+PCB/fp-info-cache
+
+# KiCad project-local settings (machine/user specific)
+PCB/*.kicad_prl
+
+# macOS
+.DS_Store
