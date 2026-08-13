@@ -12,7 +12,7 @@ Includes:
 
 [Here](https://user-cdn.hackclub-assets.com/019ff91c-0464-7b39-83fa-bce072a783c1/img_1220__yafw_balanced_.mp4) is a video of flappy bird on it! Firmware by [@SamDev-7](https://github.com/SamDev-7)
 
-<img width="358" height="200" alt="image" src="https://github.com/user-attachments/assets/0dd3e98f-1096-4351-8b76-29599a997ecf" />
+<img width="400" alt="img_1220__yafw_balanced_" src="https://github.com/user-attachments/assets/d6388cf9-6edf-4b83-a0a3-ab84c99522c8" />
 
 ---
 
