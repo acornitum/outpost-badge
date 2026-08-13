@@ -16,3 +16,6 @@ PCB/*.kicad_prl
 
 # macOS
 .DS_Store
+
+# scratch / downloads (CircuitPython UF2s, captures, etc.)
+tmp/
