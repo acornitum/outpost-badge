@@ -7,12 +7,20 @@ These are e-ink badges that I made for Outpost! They're built with the RP2354 an
 Includes:
 - 2.9in e-ink screen
 - NFC capabilities
-- 21 gpio pins broken out that you can use with the perfboard at the bottom
-- 6 tactile buttons you can snap right onto the board
+- 6 tactile buttons that snap right onto the board
+- 15 additional gpio pins broken out to use with the perfboard at the bottom
+- USB-C for power and programming
+- 3 lanyard holes that fit single + double clip lanyards, and badge clips
+- 4 mounting holes in case you want to 3d print a case 
 
 [Here](https://user-cdn.hackclub-assets.com/019ff91c-0464-7b39-83fa-bce072a783c1/img_1220__yafw_balanced_.mp4) is a video of flappy bird on it! Firmware by [@SamDev-7](https://github.com/SamDev-7)
 
 <img width="400" alt="img_1220__yafw_balanced_" src="https://github.com/user-attachments/assets/d6388cf9-6edf-4b83-a0a3-ab84c99522c8" />
+
+
+You can also use it to play doom (the badge is only used as a monitor + input in this gif) :D
+
+<img width="400" alt="badgedoomgif" src="https://github.com/user-attachments/assets/3ea22a43-f80b-41c9-8835-1dee309a2cab" />
 
 ---
 
@@ -24,6 +32,6 @@ Includes:
 
 ---
 
-HUGE thanks to [@cyao](https://github.com/cheyao) for helping with the design, many reviews and feedback, and ordering the boards! 
+HUGE thanks to [@cyao](https://github.com/cheyao) for helping with the design, and ordering the boards! The badge would not have worked without the countless reviews and feedback. 
 
 Additional thanks to [@mpkendall](https://github.com/mpkendall) and [@KaiPereira](https://github.com/KaiPereira) for reviewing the board!
