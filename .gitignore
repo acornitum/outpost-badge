@@ -19,3 +19,7 @@ PCB/*.kicad_prl
 
 # scratch / downloads (CircuitPython UF2s, captures, etc.)
 tmp/
+
+# img2eink files
+firmware/img2eink/badge.png
+firmware/img2eink/code.py
