@@ -23,3 +23,5 @@ tmp/
 # img2eink files
 firmware/img2eink/badge.png
 firmware/img2eink/code.py
+firmware/img2eink/nfc.vcard.json
+firmware/img2eink/nfc.url.json
