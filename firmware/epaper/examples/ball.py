@@ -31,6 +31,7 @@ import time
 import board
 import busio
 from ssd1680 import SSD1680, WIDTH, HEIGHT
+import badge
 
 STRIDE = WIDTH // 8          # 16 bytes/row
 NROWS = HEIGHT               # 296
@@ -112,7 +113,8 @@ print("built in %.1fs" % (time.monotonic() - t0))
 
 epd.display_base(FRAMES[0])                      # seeds BOTH RAMs
 epd.arm_partial(tpa=2, frame_rate=0x44, groups=None)
-print("looping -- Ctrl-C to stop.")
+print("looping -- Ctrl-C to stop, or hold A+B for 1 s.")
+buttons = badge.Buttons()
 
 i = 0
 shown = 0
@@ -120,7 +122,8 @@ busy = 0.0
 t0 = time.monotonic()
 try:
     while True:
-        _, tb, _ = epd.frame_nopower(FRAMES[i % NFRAMES], mode=0x04, sync_old=True)
+        _, tb, _ = epd.frame_nopower(FRAMES[i % NFRAMES], mode=0x04, sync_old=True,
+                                     poll=buttons.poll)
         busy += tb
         i += 1
         shown += 1
@@ -147,3 +150,5 @@ finally:
     epd.init()
     epd.display_full(bytearray(b"\xFF" * (STRIDE * NROWS)))
     print("panel clean, analog off.")
+
+badge.exit_to_menu()           # no-op unless launched from the menu
