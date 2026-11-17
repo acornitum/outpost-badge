@@ -19,3 +19,6 @@ PCB/*.kicad_prl
 
 # scratch / downloads (CircuitPython UF2s, captures, etc.)
 tmp/
+
+# Python bytecode
+__pycache__/
