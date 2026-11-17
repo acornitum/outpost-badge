@@ -104,6 +104,8 @@ firmware/
   tools/               shared
     deploy.sh          copy lib/ + one script, or the whole menu, to CIRCUITPY
     monitor.py         read the serial console
+    preview.py         render app previews on your computer (no badge needed)
+    font6x12.json      the badge's built-in font, for preview.py
   epaper/
     README.md          how the fast refresh works, and what it costs
     examples/          flappy, snake, pong, ball, gradient
@@ -184,6 +186,23 @@ The argument to `deploy.sh` is a bare name or a path under `firmware/`:
 `CIRCUITPY/code.py`. CircuitPython re-runs `code.py` on every save, so copying a
 file restarts the program. Pass `passive` to `monitor.py` to avoid sending
 Ctrl-C and Ctrl-D on top of that auto-restart.
+
+## Previewing without a badge
+
+`tools/preview.py` runs the real app scripts against a fake badge (a display that
+records frames, scripted buttons, a virtual clock, a fake NFC tag) and writes a PNG
+and GIF per app plus a contact sheet. It needs Pillow.
+
+```bash
+python3 firmware/tools/preview.py                  # everything -> ./preview/
+python3 firmware/tools/preview.py --only snake pong
+python3 firmware/tools/preview.py --image art.png  # My Badge with your own picture
+```
+
+![Preview of every app](docs/preview/contact_sheet.png)
+
+It shows ideal pixels: ghosting, the contrast cost of the fast waveform and real
+refresh timing are not modelled.
 
 ## Menu and apps
 

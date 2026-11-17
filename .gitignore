@@ -27,3 +27,6 @@ __pycache__/
 firmware/my_badge/nfc.url.json
 firmware/my_badge/nfc.vcard.json
 firmware/my_badge/out/
+
+# preview.py output (docs/preview/ is committed)
+/preview/
