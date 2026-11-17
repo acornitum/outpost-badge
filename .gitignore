@@ -19,3 +19,14 @@ PCB/*.kicad_prl
 
 # scratch / downloads (CircuitPython UF2s, captures, etc.)
 tmp/
+
+# Python bytecode
+__pycache__/
+
+# My Badge: personal NFC details and generated output
+firmware/my_badge/nfc.url.json
+firmware/my_badge/nfc.vcard.json
+firmware/my_badge/out/
+
+# preview.py output (docs/preview/ is committed)
+/preview/

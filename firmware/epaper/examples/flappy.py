@@ -38,6 +38,7 @@ import board
 import busio
 import digitalio
 from ssd1680 import SSD1680, WIDTH, HEIGHT
+import badge
 
 STRIDE = WIDTH // 8
 NROWS = HEIGHT               # 296 -> screen width  (x, horizontal)
@@ -67,6 +68,7 @@ for _p in BUTTON_PINS:
     _io.pull = digitalio.Pull.UP if PULL_UP else digitalio.Pull.DOWN
     BUTTONS.append(_io)
 
+_exit = badge.ExitCombo()    # hold A+B for 1 s -> KeyboardInterrupt -> menu
 _held = False                # debounced "any button is down"
 _edge_t = 0.0                # time of the last accepted edge
 _latch = False               # a press happened and the game has not used it
@@ -85,6 +87,7 @@ def poll():
     DEBOUNCE seconds, so contact chatter cannot register as several presses.
     """
     global _held, _edge_t, _latch, _presses
+    _exit.update(not BUTTONS[4].value, not BUTTONS[5].value)   # A, B
     now = time.monotonic()
     if now - _edge_t < DEBOUNCE:
         return
@@ -370,3 +373,5 @@ finally:
     epd.init()
     epd.display_full(bytearray(BG))
     print("panel clean, analog off.")
+
+badge.exit_to_menu()           # no-op unless launched from the menu

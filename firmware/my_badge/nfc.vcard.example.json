@@ -1,0 +1,28 @@
+{
+  "prefix": "",
+  "first_name": "CHANGE_ME",
+  "middle_name": "",
+  "last_name": "CHANGE_ME",
+  "suffix": "",
+  "nickname": "",
+  "org": "",
+  "title": "",
+  "role": "",
+  "birthday": "",
+  "note": "",
+  "phone": "CHANGE_ME",
+  "phone_work": "",
+  "email": "CHANGE_ME",
+  "email_work": "",
+  "url": "",
+  "address": {
+    "type": "HOME",
+    "po_box": "",
+    "extended": "",
+    "street": "",
+    "city": "",
+    "region": "",
+    "postal_code": "",
+    "country": ""
+  }
+}

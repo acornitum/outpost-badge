@@ -25,6 +25,7 @@ import time
 import board
 import busio
 from ssd1680 import SSD1680, WIDTH, HEIGHT
+import badge
 
 STRIDE = WIDTH // 8          # 16 bytes/row
 NROWS = HEIGHT               # 296
@@ -86,6 +87,7 @@ print("built in %.1fs (%d KB)" % (time.monotonic() - t0,
                                   NFRAMES * STRIDE * NROWS // 1024))
 
 # ---- play it back ---------------------------------------------------------
+buttons = badge.Buttons()          # hold A+B for 1 s to stop (back to the menu)
 try:
     for label, tpa, fr, groups, frames in SETTINGS:
         epd.display_base(FRAMES[0])
@@ -100,7 +102,7 @@ try:
             # sync_old=False restores the original behaviour: the driver gained
             # a sync_old parameter after this run, defaulting to True.
             _, tb, _ = epd.frame_nopower(FRAMES[i % NFRAMES], mode=0x04,
-                                         sync_old=True)
+                                         sync_old=True, poll=buttons.poll)
             busy += tb
             i += 1
             shown += 1
@@ -131,3 +133,5 @@ finally:
     epd.init()
     epd.display_full(FRAMES[0])
     print("panel clean, analog off.")
+
+badge.exit_to_menu()           # no-op unless launched from the menu

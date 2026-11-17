@@ -1,0 +1,10 @@
+# Apps installed by `deploy.sh --menu`: paths under firmware/, one per line.
+# Each is copied to CIRCUITPY/apps/<basename>. The menu lists them in the order
+# of NAMES in menu.py, then any others alphabetically.
+epaper/examples/flappy.py
+epaper/examples/snake.py
+epaper/examples/pong.py
+epaper/examples/ball.py
+epaper/examples/gradient.py
+nfc/examples/nfc_text.py
+my_badge/my_badge.py
