@@ -22,3 +22,8 @@ tmp/
 
 # Python bytecode
 __pycache__/
+
+# My Badge: personal NFC details and generated output
+firmware/my_badge/nfc.url.json
+firmware/my_badge/nfc.vcard.json
+firmware/my_badge/out/
